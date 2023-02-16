@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 900;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  background-color: #cdd0ee;
+}
+
+form {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 20px;
+  background-color: #055360;
+  margin-bottom: 30px;
+}
+
+input {
+  padding: 15px;
+  border-radius: 15px;
+  background-color: #dee9e9;
+  margin-bottom: 20px;
+}
+input::placeholder {
+  color: #bd4bbb;
+  font-size: medium;
+  font-weight: 500;;
+}
+
+.list {
+  display: flex;
+  width: 500px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form button {
+  margin: 0 auto;
+  padding: 10px 15px;
+  width: 100px;
+  border: 0;
+  background-color: #7b8bc2;
+  color: #dee8e9;
+  font-weight: 700;
+}
+
+.password {
+  text-decoration: underline;
+  text-align: center;
+}
+
+.block__btn {
+  display: flex;
+  justify-content: space-around ;
+}
+.block__btn button:first-of-type {
+  margin-right: 30px;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 40px;
+  width: max-content;
+  max-width: 80%;
+  background-color: #6888ef;
+}
+
+button {
+  margin: 0 auto;
+  padding: 15px 20px;
+  width: 100px;
+  border: 0;
+  background-color: #322757;
+  color: #e9e0de;
+  font-weight: 700;
+  cursor: pointer;
+}
+.block-text {
+ padding: 10px;
+ width: 300px;
+}
+.h1 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  font-weight: 800;
+  font-family: 'Courier New', Courier, monospace;
+  color: #dee8e9;
+}
+.p {
+  margin-bottom: 20px;
+  color:#dee8e9
+}
+
+.block.animate {
+  animation: block 0.3s ease-in-out;
+  transform: scale(1);
+}
+
+@keyframes block {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.load {
+  margin: 0 auto;
+  width: max-content;
+}
+
+.ring {
+  margin-top: 300px;
+  animation: ring 1s infinite ease;
+}
+
+.block__comments {
+  margin: 10px;
+}
+
+.comment {
+  padding: 10px;
+  background-color: #7b8bc2;
+  border: 2px solid blueviolet;
+  margin-bottom: 20px;
+}
+
+.ring img {
+  width: 250px;
+  border-radius: 125px;
+}
+
+@keyframes ring {
+  to {
+    transform: rotate(360deg);
+  }
+}
